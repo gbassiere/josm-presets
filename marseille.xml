@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="Gilles Bassière" description="Mobilier urbain, pré-configuré pour Marseille">
+    <group name="Marseille">
+        <item name="Boîte à lettres" icon="styles/standard/service/post_box.png" type="node">
+            <key key="amenity" value="post_box"/>
+            <key key="operator" value="La Poste"/>
+        </item>
+        <item name="Cabine téléphonique" icon="presets/telephone.png" type="node">
+            <text key="contact:phone" text="Numéro" delete_if_empty="true"/>
+            <check key="covered" text="Couvert ?" default="on" value_on="yes" value_off="no"/>
+            <key key="amenity" value="telephone"/>
+            <key key="operator" value="France Télécom"/>
+            <key key="payment:debit_cards" value="yes"/>
+            <key key="payment:telephone_cards" value="yes"/>
+        </item>
+        <separator/>
+        <item name="Station de vélo" icon="presets/bicycle_rental.png" type="node">
+            <text key="name" text="Nom" delete_if_empty="true"/>
+            <text key="ref" text="Identifiant" delete_if_empty="true"/>
+            <text key="capacity" text="Nombre de bornettes" delete_if_empty="true"/>
+            <key key="amenity" value="bicycle_rental"/>
+            <key key="operator" value="Cyclocity"/>
+            <key key="network" value="Le vélo"/>
+            <key key="website" value="http://www.levelo-mpm.fr/"/>
+        </item>
+        <item name="Point auto-partage" icon="styles/standard/vehicle/car_sharing.png" type="node">
+            <text key="name" text="Nom" delete_if_empty="true"/>
+            <text key="capacity" text="Nombre de places" delete_if_empty="true"/>
+            <key key="amenity" value="car_sharing"/>
+            <key key="operator" value="AutoPartage"/>
+            <key key="website" value="http://www.autopartage-provence.com/"/>
+        </item>
+        <separator/>
+        <item name="Expression libre" type="node">
+            <combo key="material" text="Support" values="metal,wood,concrete" display_values="Métal,Bois,Mur/Béton" delete_if_empty="true"/>
+            <key key="amenity" value="billboard"/>
+            <key key="access" value="yes"/>
+            <key key="description" value="Expression libre"/>
+        </item>
+        <item name="Colonne Morris" type="node">
+            <combo key="material" text="Support" values="metal,wood,concrete" display_values="Métal,Bois,Mur/Béton" delete_if_empty="true"/>
+            <check key="access" text="Accès libre ?" default="on" value_on="yes" value_off="no"/>
+            <key key="amenity" value="billboard"/>
+            <key key="description" value="Colonne Morris"/>
+        </item>
+        <separator/>
+        <item name="Point recyclage" type="node">
+            <check key="recycling:glass" text="Verre ?" default="on" value_on="yes" value_off="" delete_if_empty="true"/>
+            <check key="recycling:cartons" text="Papier/cartons ?" default="on" value_on="yes" value_off="" delete_if_empty="true"/>
+            <check key="recycling:plastic" text="Plastiques ?" default="on" value_on="yes" value_off="" delete_if_empty="true"/>
+            <key key="amenity" value="recycling"/>
+        </item>
+    </group>
+</presets>
