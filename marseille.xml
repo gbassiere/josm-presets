@@ -31,6 +31,13 @@
             <key key="website" value="http://www.autopartage-provence.com/"/>
         </item>
         <separator/>
+        <item name="Borne historique" type="node">
+            <text key="name" text="Nom" delete_if_empty="true"/>
+            <key key="tourism" value="information"/>
+            <key key="information" value="board"/>
+            <key key="board_type" value="history"/>
+        </item>
+        <separator/>
         <item name="Expression libre" type="node">
             <combo key="material" text="Support" values="metal,wood,concrete" display_values="Métal,Bois,Mur/Béton" delete_if_empty="true"/>
             <key key="amenity" value="billboard"/>
