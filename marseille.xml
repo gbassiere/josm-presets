@@ -57,5 +57,12 @@
             <check key="recycling:plastic" text="Plastiques ?" default="on" value_on="yes" value_off="" delete_if_empty="true"/>
             <key key="amenity" value="recycling"/>
         </item>
+        <separator/>
+        <item name="Arbre d''alignement" type="node">
+            <combo key="type" text="Forme" values="broad_leafed,conifer,palm" display_values="feuillu,conifère,palmier" required="true"/>
+            <combo key="species" text="Espèce" values="Platanus hispanica,Celtis australis,Aesculus hippocastanum,Tilia tomentosa" display_values="Platane,Micocoulier,Marronier d''inde,Tilleul argenté" delete_if_empty="true"/>
+            <text key="height" text="Hauteur" delete_if_empty="true"/>
+            <key key="natural" value="tree"/>
+        </item>
     </group>
 </presets>
