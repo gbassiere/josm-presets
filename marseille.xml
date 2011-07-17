@@ -31,6 +31,44 @@
             <key key="website" value="http://www.autopartage-provence.com/"/>
         </item>
         <separator/>
+        <item name="Arrêt de bus, plate-forme" icon="presets/bus_small.png" type="node">
+            <text key="name" text="Nom" delete_if_empty="true"/>
+            <key key="highway" value="bus_stop"/>
+            <key key="operator" value="RTM"/>
+            <key key="public_transport" value="platform"/>
+            <check key="bench" text="Banc" default="on" value_on="yes" value_off="no"/>
+            <check key="shelter" text="Abri" default="on" value_on="yes" value_off="no"/>
+        </item>
+        <item name="Arrêt de bus, arrêt" icon="presets/bus_small.png" type="node">
+            <text key="name" text="Nom" delete_if_empty="true"/>
+            <key key="operator" value="RTM"/>
+            <key key="bus" value="yes"/>
+            <key key="public_transport" value="stop_position"/>
+        </item>
+        <item name="Service de bus, direction" icon="presets/path.png" type="relation">
+            <text key="name" text="Nom" delete_if_empty="true"/>
+            <text key="from" text="Origine" delete_if_empty="true"/>
+            <text key="to" text="Destination" delete_if_empty="true"/>
+            <key key="type" value="route"/>
+            <key key="route" value="bus"/>
+            <key key="operator" value="RTM"/>
+            <roles>
+                <role key="" text="Tronçon de route" requisite="optional" type="way" />
+                <role key="platform" text="Plateforme" requisite="optional" type="node" />
+                <role key="stop" text="Arrêt" requisite="optional" type="node" />
+            </roles>
+        </item>
+        <item name="Service de bus, ligne" icon="presets/path.png" type="relation">
+            <key key="type" value="route_master"/>
+            <key key="route_master" value="bus"/>
+            <text key="ref" text="Numéro" delete_if_empty="true"/>
+            <text key="name" text="Nom" delete_if_empty="true"/>
+            <key key="operator" value="RTM"/>
+            <roles>
+                <role key="" text="Directions/variantes" requisite="optional" type="relation" />
+            </roles>
+        </item>
+        <separator/>
         <item name="Borne historique" type="node">
             <text key="name" text="Nom" delete_if_empty="true"/>
             <key key="tourism" value="information"/>
