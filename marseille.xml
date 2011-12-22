@@ -31,6 +31,12 @@
             <key key="website" value="http://www.autopartage-provence.com/"/>
         </item>
         <separator/>
+        <item name="Caméra de vidéo-surveillance" icon="styles/standard/misc/surveillance.png" type="node">
+            <key key="man_made" value="surveillance"/>
+            <key key="surveillance" value="public"/>
+            <key key="operator" value="Ville de Marseille"/>
+        </item>
+        <separator/>
         <item name="Arrêt de bus, plate-forme" icon="presets/bus_small.png" type="node">
             <text key="name" text="Nom" delete_if_empty="true"/>
             <key key="highway" value="bus_stop"/>
