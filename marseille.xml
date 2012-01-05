@@ -14,6 +14,12 @@
             <key key="payment:telephone_cards" value="yes"/>
         </item>
         <separator/>
+        <item name="Parking vélo" icon="styles/standard/vehicle/parking/bicycle.png" type="node">
+            <key key="amenity" value="bicycle_parking"/>
+            <key key="bicycle_parking" value="sheffield"/>
+            <check key="covered" text="Couvert ?" default="off" value_on="yes" value_off="no"/>
+            <text key="capacity" text="Nombre d'arceaux" delete_if_empty="true"/>
+        </item>
         <item name="Station de vélo" icon="presets/bicycle_rental.png" type="node">
             <text key="name" text="Nom" delete_if_empty="true"/>
             <text key="ref" text="Identifiant" delete_if_empty="true"/>
